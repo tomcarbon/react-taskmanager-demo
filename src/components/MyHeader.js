@@ -13,7 +13,7 @@ class MyHeader extends React.Component {
 				</div>
 				<div  style={{float: 'right', margin:"10px", fontSize:"12px"}}>
 					<div>Ficticious Business </div>
-					<div>1234 S Springfield Ave</div>
+					<div>1234 S Ficticious Ave</div>
 					<div>Redondo Beach, CA 90278</div>
 					<div>(310) 555-1212</div>
 				</div>
