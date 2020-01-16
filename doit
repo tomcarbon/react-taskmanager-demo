@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "[DOIT] Welcome to the quicker docker builder for "sample react website on localhost!""
+read -p "Press b to build, r to run or n/q to quit, and hit enter: " rc
+case "$rc" in
+	b)  docker build -t docker-react-website-starter .;;
+	r)  echo "Did you remember to stop the previously running job?"
+		docker run -td -p 80:3000 docker-react-website-starter ;;
+	n) exit;;
+	q) exit;;
+esac
+./doit
+
+
