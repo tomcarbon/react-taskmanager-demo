@@ -10,7 +10,6 @@ RUN \
   apt-get install -y software-properties-common && \
   apt-get install -y byobu curl git htop man unzip vim wget iputils-ping && \
   apt-get install -y nodejs npm
-#  rm -rf /var/lib/apt/lists/*
 
 #install yarn and create a generic react-app project
 WORKDIR /app
