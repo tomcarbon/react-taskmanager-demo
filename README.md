@@ -26,6 +26,7 @@ Run the script "doit" (options b, then r) to build and then run this website. Sh
 1) The first time is probably going to take several minutes, and the install may even appear to hang after the "Happy hacking! Done in xx.xxs." messages. Hang in there. After the first time things should go MUCH quicker.
 2) After running the container, make sure to give yarn a few seconds to start up the server, before checking the output on your browser at localhost.
 3) The footer in the Services and Testimonials screens drops into the right place after content is added.
+4) To use your own project which was created by (create react-app (or create-react-app)), replace the src and public folders with your own.
 
 **Known Issues**
 1) There are some warnings on the yarn calls, related to typescript/react-scripts. Installing the latest version of typescript in the Dockerfile before the call to "yarn create react-app" does not alleviate the issue. There is also a warning related to sha.js. If anyone can make these go away, please let me know. 
