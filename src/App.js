@@ -16,16 +16,14 @@ export default class App extends React.Component {
 		};
 	}
 
-	handleToUpdate(someArg){
+	handleToUpdate(a){
 		/* variable passed from menu buttons located at MenuBar.js */
-		/* not currently used */
-		/* alert('We pass argument from Child to Parent: ' + someArg); */
-		this.setState({dest:someArg});
+		this.setState({dest:a});
 	}
 
-	languageToUpdate(someArg){
+	languageToUpdate(a){
 		/* variable passed from language buttons located at MyHeader.js */
-		this.setState({language_preference:someArg});
+		this.setState({language_preference:a});
 	}
 
 	render() {
