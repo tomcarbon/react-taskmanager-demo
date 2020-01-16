@@ -1,8 +1,6 @@
 /********************************************************************
  * Nav -- navigation for the site
- * requires: this.props.dest ('a1').
- * 20191202
- * *****************************************************************/
+ *******************************************************************/
 import React from 'react';
 import A1 from "../Screens/A1"
 import B1 from "../Screens/B1"
@@ -18,11 +16,9 @@ class Nav extends React.Component {
 
 	constructor(props) {
 		super(props);
-		console.log(this.props.langprefs);
 	}
 
 	render () {
-		console.info("in Nav: this.props = " + this.props);
 		if (this.props.dest === 'A1') {
 			return (
 				<div>
@@ -63,7 +59,7 @@ class Nav extends React.Component {
 				<H1 langprefs={this.props.langprefs}/>
 			);
 		} else {
-			console.info("most undignified A1 has the actual value of '" + this.props.dest + "'.");
+			console.info("Unexpected value of " + this.props.dest + "'. Resetting to A1");
 			return (
 				<A1 langprefs={this.props.langprefs}/>
 			);

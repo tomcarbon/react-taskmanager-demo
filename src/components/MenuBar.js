@@ -1,18 +1,10 @@
 /*******************************************
  * MenuBar.js
- * display the menu bar that's below the header
- * tcc 20191201
-			<div style={{height:"50px", backgroundColor:"#f0f8ff" }} >
  * ****************************************/
 import React from 'react';
 import TCText from './TCText';
 
 class MenuBar extends React.Component {
-	/*
-	constructor(props) {
-		super(props);
-        }
-	*/
 
 	render() {
 		var handleToUpdate = this.props.handleToUpdate;

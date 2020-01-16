@@ -1,12 +1,9 @@
 /********************************************************************
  * TCText -- multi-language text output.
- * 20191121
-			<p>{this.state.outtext}</p>
  * *****************************************************************/
 import React from 'react';
 
-/* depending on the selected language out put the correct string. */
-
+/* depending on the selected language output the correct string. */
 class TCText extends React.Component {
 
 	constructor(props) {
