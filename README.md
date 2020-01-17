@@ -27,7 +27,7 @@ Run the script "doit" (options b, then r) to build and then run this website. Sh
 2) After running the container, make sure to give yarn a few seconds to start up the server, before checking the output on your browser at localhost.
 3) The footer in the Services and Testimonials screens drops into the right place after content is added.
 4) To use your own project (which was created by create react-app or create-react-app), replace the src and public folders with your own. Depending on the complexity of your site, you may need to add additional steps to the Dockerfile (e.g.: copy package.json file, RUN yarn install).
-5) FYI this runs on the Raspberry Pi3 (Raspbian).
+5) This also runs on the Raspberry Pi3 (Raspbian).
 
 **Known Issues**
 1) On the docker image build there are some warnings on the yarn calls, related to typescript/react-scripts. Installing the latest version of typescript in the Dockerfile before the call to "yarn create react-app" does not alleviate the issue. There is also a warning related to sha.js. If anyone can help make these go away, please advise.
