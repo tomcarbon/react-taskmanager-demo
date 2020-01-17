@@ -29,7 +29,7 @@ Run the script "doit" (options b, then r) to build and then run this website. Sh
 4) To use your own project (which was created by create react-app or create-react-app), replace the src and public folders with your own. Depending on the complexity of your site, you may need to add additional steps to the Dockerfile (e.g.: copy package.json file, RUN yarn install).
 
 **Known Issues**
-1) On the docker image build there are some warnings on the yarn calls, related to typescript/react-scripts. Installing the latest version of typescript in the Dockerfile before the call to "yarn create react-app" does not alleviate the issue. There is also a warning related to sha.js. If anyone can help make these go away, please let me know. 
+1) On the docker image build there are some warnings on the yarn calls, related to typescript/react-scripts. Installing the latest version of typescript in the Dockerfile before the call to "yarn create react-app" does not alleviate the issue. There is also a warning related to sha.js. If anyone can help make these go away, please advise.
 
 ************************************************
 
