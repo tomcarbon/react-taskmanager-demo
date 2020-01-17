@@ -36,4 +36,4 @@ Run the script "doit" (options b, then r) to build and then run this website. Sh
 
 Here is a screenshot: https://imgur.com/a/uenB4vn
 
-*(this page last updated: 20200116)*
+*(this page last updated: 20200117)*
