@@ -9,7 +9,7 @@ TLDR: This is intended to be a quick starter for getting a node/react website (t
 
 Here is a website that runs from a docker container on localhost port 80, utilizing yarn, node, and react. 
 
-The docker container uses a robust installation of Ubuntu 18.04 with several common tools (such as htop and vim) installed. The node/React website itself is of low-medium complexity, built for a ficticious business, featuring a home page with several menu items, some images, and a method for supporting multiple languages (configured for English/Spanish in this example).
+The docker container uses a robust installation of Ubuntu 18.04 with several common tools (such as htop and vim) installed. The node/React website itself is of low-medium complexity, built for a ficticious business, featuring a home page with several menu items and navigation, some images, and a method for supporting multiple languages (configured for English/Spanish in this example).
 
 
 **Prerequisites**
