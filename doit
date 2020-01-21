@@ -1,10 +1,10 @@
 #!/bin/bash
-echo "[DOIT] Welcome to the quicker docker builder for "sample react website on localhost!""
+echo "[DOIT] Welcome to the quicker docker builder for "react taskmanager demo.""
 read -p "Press b to build, r to run or n/q to quit, and hit enter: " rc
 case "$rc" in
-	b)  docker build -t docker-react-website-starter .;;
+	b)  docker build -t react-taskmanager-demo .;;
 	r)  echo "Did you remember to stop the previously running job?"
-		docker run -td -p 80:3000 docker-react-website-starter ;;
+		docker run -td -p 80:3000 react-taskmanager-demo ;;
 	n) exit;;
 	q) exit;;
 esac

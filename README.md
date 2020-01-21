@@ -1,40 +1,27 @@
+REACT-TASKMANAGER-DEMO (dockerized 20200121)
 
-**DOCKER-REACT-WEBSITE-STARTER**
+******************************************************
 
-******************************************************************************
+ScreenShots: [link](https://imgur.com/a/C0HCGSL)
 
-SCREENSHOTS: [link](https://imgur.com/a/uenB4vn)
+This project is a node/React webpage, a simple Task Manager application. It demonstrates several key React functionalities and ideas, including:
 
-TLDR: This is intended to be a quick starter for getting a node/react website (template for a brick-and-mortar retail establishment) up and running in a docker container.
+    Session Storage
+    Lifting State up
+    using modals
 
-******************************************************************************
+This application allows for the creation, editing, deletion and prioritization of tasks (high, medium, low). The program will not retain memory between sessions -- Refreshing the browser (e.g. F5) will delete any entered task data.
 
-Here is a website that runs from a docker container on localhost port 80, utilizing yarn, node, and react. 
+Notes
 
-The docker container uses a robust installation of Ubuntu 18.04 with several common tools (such as htop and vim) installed. The node/React website itself is of low-medium complexity, built for a ficticious business, featuring a home page with several menu items and navigation, some images, and a method for supporting multiple languages (configured for English/Spanish in this example).
+1) The first time is probably going to take several minutes, a couple warnings, and the install may even appear to hang after the "Happy hacking! Done in xx.xxs." messages. Hang in there. After the first time things should go much quicker. Also, the first time, if you get a timeout error (esp. with yarn install), run option 'b' again and that should resolve the issue.
+2) After running the container, make sure to give yarn about a minute to start up the server, before checking the output on your browser at localhost.
+3) 'doit' is a LINUX script. If you are not running linux then deconstruct this script to determine your build and run docker commands.
+Known Issues
+4) If you do not wish to run docker, you can run npm install and npm run from the react-taskmanager-demo directory.
 
-
-**Prerequisites**
-
-1) docker needs to be installed.
-
-2) 'doit' is a LINUX script. If you are not running linux then deconstruct this script for your docker commands as appropriate.
-
-**To Run**
-
-Run the script "doit" (options b, then r) to build and then run this website. Shortly after the container has started running, the website should be accessible via the browser at 'localhost'.
- 
-**Notes**
-1) The first time is probably going to take several minutes, and the install may even appear to hang after the "Happy hacking! Done in xx.xxs." messages. Hang in there. After the first time things should go much quicker. Also, the first time, if you get a timeout error (esp. with yarn install), run option 'b' again and that should resolve the issue.
-2) After running the container, make sure to give yarn a few seconds to start up the server, before checking the output on your browser at localhost.
-3) The footer in the Services and Testimonials screens drops into the right place after content is added.
-4) To use your own project (which was created by create react-app or create-react-app), replace the src and public folders with your own. Depending on the complexity of your site, you may need to add additional steps to the Dockerfile (e.g.: copy package.json file, RUN yarn install).
-5) This also runs on the Raspberry Pi3 (Raspbian).
-
-**Known Issues**
-1) On the docker image build there are some warnings on the yarn calls, related to typescript/react-scripts. Installing the latest version of typescript in the Dockerfile before the call to "yarn create react-app" does not alleviate the issue. There is also a warning related to sha.js. If anyone can help make these go away, please advise.
-
-************************************************
+******************************************************
 
 
-*(this page last updated: 20200120)*
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), also the [docker-react-website-starter](https://github.com/tomcarbon/docker-react-website-starter).
+

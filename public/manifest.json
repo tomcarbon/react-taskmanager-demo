@@ -1,6 +1,6 @@
 {
-  "short_name": "website-starter",
-  "name": "docker-react-website-starter",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
