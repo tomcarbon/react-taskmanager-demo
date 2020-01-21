@@ -12,6 +12,8 @@ This project is a node/React webpage, a simple Task Manager application. It demo
 
 This application allows for the creation, editing, deletion and prioritization of tasks (high, medium, low). The program will not retain memory between sessions -- Refreshing the browser (e.g. F5) will delete any entered task data.
 
+The program is easy to install if you're running linux: first install docker. Then run the 'doit' script (options b, then r). Finally, after a minute, check localhost on your browser.
+
 Notes
 
 1) The first time is probably going to take several minutes, a couple warnings, and the install may even appear to hang after the "Happy hacking! Done in xx.xxs." messages. Hang in there. After the first time things should go much quicker. Also, the first time, if you get a timeout error (esp. with yarn install), run option 'b' again and that should resolve the issue.
